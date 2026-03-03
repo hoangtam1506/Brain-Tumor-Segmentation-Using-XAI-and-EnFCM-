@@ -41,24 +41,38 @@ Biểu đồ phân chia dữ liệu
 <p align="center"> <img src="https://github.com/user-attachments/assets/fb5990ab-bf3a-4d7b-a1d2-75d7215dc73a" width="750"> </p> 
 
 **3. Phương pháp đề xuất**
+
 Sơ đồ phương pháp đề xuất
+
 <p align="center"> <img src="https://github.com/user-attachments/assets/c0d6f926-6bb4-4015-a115-ba788747984f" width="850"> </p>
 
 Hệ thống được xây dựng theo một quy trình xử lý tuần tự bao gồm:
+
 **Thu thập dữ liệu**
+
 Sử dụng tập Brain Tumor MRI Dataset bao gồm nhiều loại khối u não khác nhau. Dữ liệu là cơ sở cho bài toán phân đoạn và phân loại. Việc tích hợp XAI giúp làm rõ cách mô hình phân tích và đưa ra quyết định.
+
 **Tiền xử lý dữ liệu**
-Chia dữ liệu thành Training và Testing.
-Cắt ảnh (Cropping) bằng phát hiện contours để tập trung vào vùng khối u.
-Resize ảnh về 224×224 và chuẩn hóa pixel về khoảng [0,1].
-Tăng cường dữ liệu (Data Augmentation): xoay, dịch chuyển, lật ảnh.
+• Chia dữ liệu thành Training và Testing.
+
+• Cắt ảnh (Cropping) bằng phát hiện contours để tập trung vào vùng khối u.
+
+• Resize ảnh về 224×224 và chuẩn hóa pixel về khoảng [0,1].
+
+• Tăng cường dữ liệu (Data Augmentation): xoay, dịch chuyển, lật ảnh.
+
 **Xây dựng mô hình**
-Sử dụng CNN (MobileNetV2, InceptionV3) để trích xuất đặc trưng.
-Kết hợp LSTM để tăng khả năng xử lý đặc trưng phức tạp.
-Áp dụng ENFCM để cải thiện phân cụm và phân đoạn vùng khối u.
-Explainable AI (XAI)
-Sử dụng Integrated Gradients hoặc SHAP để giải thích quyết định của mô hình, tăng tính minh bạch và độ tin cậy.
+
+• Sử dụng CNN (MobileNetV2, InceptionV3) để trích xuất đặc trưng.
+
+• Kết hợp LSTM để tăng khả năng xử lý đặc trưng phức tạp.
+
+• Áp dụng ENFCM để cải thiện phân cụm và phân đoạn vùng khối u.
+
+• Explainable AI (XAI): Sử dụng Integrated Gradients hoặc SHAP để giải thích quyết định của mô hình, tăng tính minh bạch và độ tin cậy.
+
 **Đánh giá mô hình**
+
 Đánh giá dựa trên Accuracy, Precision, Recall, F1-score và Loss để đo lường hiệu suất tổng thể
 
 
@@ -66,6 +80,7 @@ Sử dụng Integrated Gradients hoặc SHAP để giải thích quyết định
 
 
 **4. Kết quả** 
+
 4.1 Kết quả huấn luyện
 <img width="949" height="330" alt="image" src="https://github.com/user-attachments/assets/281195cc-4092-47d9-bea9-36da7d9b533c" />
 
