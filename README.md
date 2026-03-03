@@ -28,10 +28,21 @@ Biểu đồ phân chia dữ liệu
 
 **3. Phương pháp đề xuất**
 Hệ thống được xây dựng theo một quy trình xử lý tuần tự bao gồm:
-1.	Tiền xử lý ảnh MRI
-2.	Phân đoạn khối u bằng mô hình máy học
-3.	Phân loại khối u dựa trên vùng phân đoạn
-4.	Áp dụng Explainable AI (XAI) để giải thích quyết định của mô hình
+1. Thu thập dữ liệu
+Sử dụng tập Brain Tumor MRI Dataset bao gồm nhiều loại khối u não khác nhau. Dữ liệu là cơ sở cho bài toán phân đoạn và phân loại. Việc tích hợp XAI giúp làm rõ cách mô hình phân tích và đưa ra quyết định.
+2. Tiền xử lý dữ liệu
+Chia dữ liệu thành Training và Testing.
+Cắt ảnh (Cropping) bằng phát hiện contours để tập trung vào vùng khối u.
+Resize ảnh về 224×224 và chuẩn hóa pixel về khoảng [0,1].
+Tăng cường dữ liệu (Data Augmentation): xoay, dịch chuyển, lật ảnh.
+3. Xây dựng mô hình
+Sử dụng CNN (MobileNetV2, InceptionV3) để trích xuất đặc trưng.
+Kết hợp LSTM để tăng khả năng xử lý đặc trưng phức tạp.
+Áp dụng ENFCM để cải thiện phân cụm và phân đoạn vùng khối u.
+4. Explainable AI (XAI)
+Sử dụng Integrated Gradients hoặc SHAP để giải thích quyết định của mô hình, tăng tính minh bạch và độ tin cậy.
+5. Đánh giá mô hình
+Đánh giá dựa trên Accuracy, Precision, Recall, F1-score và Loss để đo lường hiệu suất tổng thể
 
 
 Sơ đồ phương pháp đề xuất
@@ -48,7 +59,9 @@ Sơ đồ phương pháp đề xuất
 <img width="949" height="302" alt="image" src="https://github.com/user-attachments/assets/3af4df0f-0a2f-45e9-bd6e-8c816af72073" />
 
  4.3 Kết quả GARDCAM
+ 
 <img width="708" height="308" alt="image" src="https://github.com/user-attachments/assets/f877c809-70da-4d0b-997d-a158b7c4699f" />
+
 <img width="660" height="284" alt="image" src="https://github.com/user-attachments/assets/53708d9c-30df-4630-bd46-4fd6d847f708" />
 
 4.4 INTERGATED GRADIENTS
