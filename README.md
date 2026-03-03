@@ -49,16 +49,18 @@ Sơ đồ phương pháp đề xuất
 
  4.3 Kết quả GARDCAM
 <img width="708" height="308" alt="image" src="https://github.com/user-attachments/assets/f877c809-70da-4d0b-997d-a158b7c4699f" />
-
 <img width="660" height="284" alt="image" src="https://github.com/user-attachments/assets/53708d9c-30df-4630-bd46-4fd6d847f708" />
 
 4.4 INTERGATED GRADIENTS
+
 <img width="728" height="333" alt="image" src="https://github.com/user-attachments/assets/8021cd1f-b378-4c62-b960-e5a66189f6cf" />
 
 4.5 SHAP
+
 <img width="727" height="329" alt="image" src="https://github.com/user-attachments/assets/31ac1a81-fc61-412e-91fa-c19981d236a8" />
 
 4.6 ENFCM
+
 <img width="631" height="326" alt="image" src="https://github.com/user-attachments/assets/014b0e28-6915-4c4e-98ef-7e7386ea86ce" />
 
 
