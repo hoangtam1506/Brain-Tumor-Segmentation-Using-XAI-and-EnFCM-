@@ -27,6 +27,7 @@ Biểu đồ phân chia dữ liệu
 <p align="center"> <img src="https://github.com/user-attachments/assets/fb5990ab-bf3a-4d7b-a1d2-75d7215dc73a" width="750"> </p> 
 
 **3. Phương pháp đề xuất**
+
 Hệ thống được xây dựng theo một quy trình xử lý tuần tự bao gồm:
 1. Thu thập dữ liệu
 Sử dụng tập Brain Tumor MRI Dataset bao gồm nhiều loại khối u não khác nhau. Dữ liệu là cơ sở cho bài toán phân đoạn và phân loại. Việc tích hợp XAI giúp làm rõ cách mô hình phân tích và đưa ra quyết định.
