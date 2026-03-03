@@ -10,16 +10,23 @@ Bên cạnh đó, hệ thống còn thực hiện trực quan hóa khối u bằ
 2.1 Brain Tumor MRI Dataset (Kaggle)
 Tập dữ liệu được cung cấp bởi Masoud Nickparvar trên nền tảng Kaggle, phục vụ nghiên cứu về nhận diện và phân loại khối u não từ ảnh MRI.
 Dataset là sự kết hợp từ ba nguồn:
+
 •	Figshare – nguồn dữ liệu chất lượng cao
+
 •	SARTAJ dataset – đã được thay thế lớp Glioma do vấn đề phân loại
+
 •	Br35H dataset – cung cấp ảnh cho lớp “No Tumor”
 
 2.2 Số lượng và cấu trúc dữ liệu
 
 Tổng số ảnh: 7023 ảnh MRI não, được phân loại thành 4 nhóm chính:
+
 •	Glioma Tumor: Khối u tế bào thần kinh đệm
+
 •	Meningioma Tumor: Khối u màng não
+
 •	Pituitary Tumor: Khối u tuyến yên
+
 •	No Tumor: Không có khối u
 
 2.3 Phân bổ dữ liệu
