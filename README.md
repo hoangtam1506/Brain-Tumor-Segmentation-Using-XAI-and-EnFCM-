@@ -1,3 +1,5 @@
+****Brain Tumor Segmentation Using XAI and ENFCM - SỬ DỤNG XAI VÀ ENFCM TRONG NHẬN DẠNG KHỐI U NÃO****
+
 **1. Giới thiệu**
 Nghiên cứu “Sử dụng XAI và ENFCM trong nhận dạng khối u não” được thực hiện nhằm giải quyết các thách thức trong bài toán phân đoạn và phân loại khối u não từ ảnh MRI.
 Mục tiêu của nghiên cứu là xây dựng một hệ thống tự động hóa không chỉ phân loại chính xác các loại khối u não mà còn tích hợp các phương pháp AI giải thích được (Explainable AI - XAI) để làm rõ cách thức và lý do đưa ra các quyết định của mô hình.
@@ -50,6 +52,7 @@ Sơ đồ phương pháp đề xuất
 <p align="center"> <img src="https://github.com/user-attachments/assets/c0d6f926-6bb4-4015-a115-ba788747984f" width="850"> </p>
 
 **4. Kết quả **
+
 4.1 Kết quả huấn luyện
 <img width="949" height="330" alt="image" src="https://github.com/user-attachments/assets/281195cc-4092-47d9-bea9-36da7d9b533c" />
 
